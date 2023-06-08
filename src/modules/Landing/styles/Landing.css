@@ -1,0 +1,14 @@
+/* .wave{
+    background: linear-gradient(
+      to top,
+      #EAC41A 10%,
+      #EAC41A 100%
+    ); 
+  }  */
+  
+.info{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8%;
+    padding-left: 40%;
+}
