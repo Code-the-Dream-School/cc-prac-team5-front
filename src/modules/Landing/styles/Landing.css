@@ -5,13 +5,12 @@
       #EAC41A 80%
     ); 
   }  */
-  
-.info{
-    display: flex;
-    flex-direction: row;
-    padding-top: 10%; 
-    /* padding-left: 40%;   */
+.Subtitle1{
+  font-size: 16px;
 }
-.Img-Container{
-  background-color: #B3C8E5;
+.Subtitle2{
+  font-size: 14px;
+}
+.LandingDescription{
+  font-size: 12.5px;
 }
