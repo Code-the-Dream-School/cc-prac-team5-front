@@ -1,15 +1,16 @@
 import React from 'react'
-import SigninButton from './SigninButton'
+import LoginButton from './LoginButton'
 import GetStartedButton from './GetStartedButton'
 import ChildLoginButton from './ChildLoginButton'
 import '../styles/Landing.css'
 import {Container, Typography, Box} from "@mui/material"
 
+
 const Landing = () => {
   return (
     <Container>
       <Box sx={{display: 'flex', pl: 30, pb: 2}}>
-        <SigninButton />
+        <LoginButton />
       </Box>
       <Box className='wave'>
       <Typography>Welcome to Calcifer</Typography>
@@ -23,6 +24,7 @@ const Landing = () => {
             <Box>
             <GetStartedButton />
             </Box>
+                
         </div>
         </div>
       </Box>
@@ -42,7 +44,7 @@ const Landing = () => {
       </div>
       <Box sx={{display: 'flex', pl: 15, py: 3}}>
           <ChildLoginButton />
-        </Box>  
+      </Box>  
     </Container>
   )
 }

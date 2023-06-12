@@ -1,14 +1,17 @@
 /* .wave{
     background: linear-gradient(
       to top,
-      #EAC41A 10%,
-      #EAC41A 100%
+      white 50%,
+      #EAC41A 80%
     ); 
   }  */
   
 .info{
     display: flex;
-    flex-direction: column;
-    padding-top: 8%;
-    padding-left: 40%;
+    flex-direction: row;
+    padding-top: 10%; 
+    /* padding-left: 40%;   */
+}
+.Img-Container{
+  background-color: #B3C8E5;
 }
