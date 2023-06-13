@@ -1,0 +1,15 @@
+.registerButton{
+    display: block;
+    background: #BCCEED;
+    border-radius: 15px;
+    border: transparent;
+    width: 70%;
+    height: 35px;
+    letter-spacing: 1px;
+}
+.registerLink{
+    color: white;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+}

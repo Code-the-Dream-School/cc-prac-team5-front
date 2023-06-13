@@ -46,7 +46,7 @@ const  Login = () => {
       <Box>
         <span className='SubtitleLinks'>
           {`Don't have an account?`} 
-          <Link to="/registration" className='SignUp'>
+          <Link to="/register" className='SignUp'>
             Sign up
           </Link>
         </span>

@@ -1,0 +1,15 @@
+.loginButton{
+    display: block;
+    background: #BCCEED;
+    border-radius: 15px;
+    border: transparent;
+    width: 80px;
+    height: 35px;
+}
+.loginLink{
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold; 
+    letter-spacing: 1px;
+}

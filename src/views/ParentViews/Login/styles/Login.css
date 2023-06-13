@@ -1,8 +1,10 @@
+@media only screen and (max-width: 992px) {
 .Login{
     display: flex;
     flex-direction: column;
     padding-right: 25%;
-    padding-top: 50%; 
+    padding-top: 50%;
+    width: 90%; 
 }
 .FormBox{
     min-width: 100%;
@@ -11,23 +13,29 @@
 }
 .FormBox input,
 textarea{
-  display: block;
-  width: 100%;
-  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-  margin: 0.9vw 0;
-  border-radius: 5px;
-  font-size: 18px;
-}
-.ButtonContainer{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     width: 100%;
+    padding: 0.5rem 0.8rem 0.5rem 0.8rem;
     margin: 0.9vw 0;
-}
-.LoginButton{
-    width: 112%;
     border-radius: 5px;
     font-size: 18px;
-    height: 40px;
+}
+.ButtonContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+}
+
+.LoginButton{
+    width: 100%;
+    border-radius: 5px;
+    font-size: 18px;
+    height: auto;
     background-color: #EAC41A;
     color: white;
 }
@@ -43,4 +51,5 @@ textarea{
     font-weight: bold;
     color: #EAC41A;
     text-decoration: none;
+}
 }
