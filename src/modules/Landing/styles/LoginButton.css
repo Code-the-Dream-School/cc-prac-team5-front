@@ -1,8 +1,7 @@
 @media only screen and (max-width: 480px) {
 .loginButton{
     display: block;
-    background: #2261ab;
-    filter:opacity(90%);
+    background: rgba(109,146,229,255);
     border-radius: 15px;
     border: transparent;
     width: 80px;
