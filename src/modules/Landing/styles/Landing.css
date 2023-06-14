@@ -31,10 +31,8 @@
   }
   .Subtitle1{
     font-size: 16px;
-    font-weight: medium;
-    color: white;
-    letter-spacing: 1;
-    /* color: #817E7E; */
+    font-weight: 700;
+    color: black;
   }
   .Subtitle2{
     font-size: 14.5px;

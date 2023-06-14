@@ -18,7 +18,7 @@ const Landing = () => {
         <LoginButton />
       </Box>
       <div className='IntroContainer'>
-        <Box sx={{ fontSize: 25, fontWeight: 'bold', letterSpacing: 5, color: 'black'}}>
+        <Box sx={{ fontSize: 25, fontWeight: 'bold', letterSpacing: 5, color: 'white'}}>
           Calcifer
         </Box>
         <div className='DescriptionContainer1'>
