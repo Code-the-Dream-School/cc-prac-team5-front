@@ -4,6 +4,7 @@ import Landing from './modules/Landing/components/Landing';
 import { Routes, Route } from "react-router-dom";
 import Login from './views/ParentViews/Login/components/Login';
 import './common/styles/GlobalStyles.css'
+import Register from './views/ParentViews/Register/components/Register';
 
 const URL = 'http://localhost:8000/api/v1/';
 
@@ -36,7 +37,12 @@ const [message, setMessage] = useState('');
             path='/login'
             element={<Login />} 
           />
+           <Route
+            path='/register'
+            element={<Register />} 
+          />
       </Routes>
+      
     </>
   );
 }
