@@ -1,17 +1,34 @@
 @media only screen and (max-width: 480px) {
-.loginButton{
-    display: block;
-    background: rgba(109,146,229,255);
-    border-radius: 15px;
-    border: transparent;
-    width: 80px;
-    height: 35px;
+    .loginButton{
+        display: block;
+        background: rgba(109,146,229,255);
+        border-radius: 15px;
+        border: transparent;
+        width: 80px;
+        height: 35px;
+    }
+    .loginLink{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold; 
+        letter-spacing: 1px;
+    }
 }
-.loginLink{
-    color: white;
-    text-decoration: none;
-    font-size: 14px;
-    font-weight: bold; 
-    letter-spacing: 1px;
-}
-}
+/* @media only screen and (max-width: 768px) {
+    .loginButton{
+        display: block;
+        background: rgba(109,146,229,255);
+        border-radius: 15px;
+        border: transparent;
+        width: 80px;
+        height: 35px;
+    }
+    .loginLink{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold; 
+        letter-spacing: 1px;
+    }
+} */

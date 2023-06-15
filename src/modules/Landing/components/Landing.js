@@ -14,7 +14,7 @@ const Landing = () => {
   return (
     <div className='bodyContainer'>
       <img src={background} alt='backgr' className='Background' />
-      <Box sx={{display: 'flex', pl: 35, pt: 2}}>
+      <Box sx={{display: 'flex', pl: 38, pt: 2}}>
         <LoginButton />
       </Box>
       <div className='IntroContainer'>
@@ -32,7 +32,7 @@ const Landing = () => {
               <img src={kids} alt='kids' className='Kids' />
             </div>
         </div>
-        <Box sx={{pl:'.5em', pb: 1}}>
+        <Box sx={{pl:'.5em', pb: 1}} className='GetStartedButton'>
               <GetStartedButton />
         </Box> 
       </div>
