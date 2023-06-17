@@ -1,0 +1,37 @@
+@media only screen and (max-width: 480px) {
+    .Footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        position: fixed;
+        bottom: 0;
+        height: 3em;
+        left: 0;
+        text-align: center;
+        background: white;
+        color: black;
+        margin-top: auto;
+        text-align: center;
+        width: 100%;
+    }
+}
+/* @media only screen and (max-width: 768px) {
+    .Footer {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1em;
+        position: fixed;
+        bottom: 0;
+        height: 3em;
+        left: 0;
+        text-align: center;
+        background: white;
+        color: black;
+        margin-top: auto;
+        text-align: center;
+        width: 100%;
+    }
+
+} */

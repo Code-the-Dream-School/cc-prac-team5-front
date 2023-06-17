@@ -1,14 +1,77 @@
-/* .wave{
-    background: linear-gradient(
-      to top,
-      #EAC41A 10%,
-      #EAC41A 100%
-    ); 
-  }  */
-  
-.info{
+@media only screen and (max-width: 480px) {
+  .bodyContainer{
+    max-width: 100vw;
+    max-height: 100vh; 
+  }
+  .Background{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    z-index: -1;
+    filter:opacity(80%);
+  }
+  .IntroContainer{
     display: flex;
     flex-direction: column;
-    padding-top: 8%;
-    padding-left: 40%;
+    width: 100%;
+    height: auto;
+    margin: .5em;
+  }
+  .DescriptionContainer1{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+  }
+  .DescriptionContainer2{
+    display: flex;
+    flex-direction: row;
+    padding-left: .5em;
+    width: 100%;
+  }
+  .Subtitle1{
+    font-size: 16px;
+    font-weight: 700;
+    color: black;
+  }
+  .Subtitle2{
+    font-size: 16px;
+    font-weight: lighter;
+    color: black;
+    padding-top: 6.5em;
+  }
+  .LandingDescription{
+    font-size: 13.5px;
+    text-align: center;
+    margin: 2px;
+  }
+  .Kids{
+    height: 180px;
+    padding-top: 60px;
+  }
+  /* .ImageContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 180px;
+    border-radius: 15px;
+    background: #BCCEED;
+    opacity: 85%;
+    position: relative;
+  } */
+  .Checklist{
+    width: 140px;
+    height: 100px;
+    margin: 2px;
+    padding-top: 4px;
+    filter:opacity(80%)
+  }
+  .Mobile{
+    width: 110px;
+    height: 100px;
+    margin: 2px;
+    padding-top: .5px;
+    filter:opacity(80%);
+  }
 }

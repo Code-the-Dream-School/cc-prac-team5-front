@@ -1,0 +1,35 @@
+@media only screen and (max-width: 480px) {
+    .registerButton{
+        display: block;
+        background: #BCCEED;
+        border-radius: 15px;
+        border: transparent;
+        width: 40%;
+        height: 35px;
+        letter-spacing: 1px;
+    }
+    .registerLink{
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+/* @media only screen and (max-width: 768px) {
+    .registerButton{
+        display: block;
+        background: #BCCEED;
+        border-radius: 15px;
+        border: transparent;
+        width: 40%;
+        height: 35px;
+        letter-spacing: 1px;
+    }
+    .registerLink{
+        color: white;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: bold;
+    }
+
+} */
