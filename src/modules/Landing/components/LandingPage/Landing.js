@@ -1,14 +1,14 @@
 import React from 'react'
-import LoginButton from './LoginButton'
-import GetStartedButton from './GetStartedButton'
-import ChildLoginButton from './ChildLoginButton'
-import '../styles/Landing.css'
+import LoginButton from '../LoginButton/LoginButton'
+import GetStartedButton from '../GetStartedButton/GetStartedButton'
+import ChildLoginButton from '../ChildLoginButton/ChildLoginButton'
+import '../../styles/Landing.css'
 import { Box} from "@mui/material"
-import Footer from './Footer'
-import background from '../../../assets/background.jpg'
-import checklist from '../../../assets/checklist.png'
-import mobile from '../../../assets/mobile.png'
-import kids from '../../../assets/kids.png'
+import Footer from '../Footer/Footer'
+import background from '../../../../assets/background.jpg'
+import checklist from '../../../../assets/checklist.png'
+import mobile from '../../../../assets/mobile.png'
+import kids from '../../../../assets/kids.png'
 
 const Landing = () => {
 

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { getAllData } from './util/index';
-import Landing from './modules/Landing/components/Landing';
+import Landing from './modules/Landing/components/LandingPage/Landing';
 import { Routes, Route } from "react-router-dom";
-import Login from './views/ParentViews/Login/components/Login';
+import Login from './views/ParentViews/Login/components/Login/LoginPage/Login';
 import './common/styles/GlobalStyles.css'
 import Register from './views/ParentViews/Register/components/Register';
 
