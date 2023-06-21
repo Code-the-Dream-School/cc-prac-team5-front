@@ -40,7 +40,7 @@ export const UserProvider = ({children}) => {
                     }
                 } catch (error) {
                     if (error.response.status === 401) {
-                        logout()
+                        // logout()
                     }
                 }
             }
@@ -48,17 +48,17 @@ export const UserProvider = ({children}) => {
         validateToken()
     }, [])
 
-    const logout = () => {
-        setUser({
-            name: '',
-            email: '',
-            token: ''
-        })
-        localStorage.clear()
-    }
+    // const logout = () => {
+    //     setUser({
+    //         name: '',
+    //         email: '',
+    //         token: ''
+    //     })
+    //     localStorage.clear()
+    // }
 
     return (
-        <UserContext.Provider value={{ user, setUser, logout }}>
+        <UserContext.Provider value={{ user, setUser }}>
             {children}
         </UserContext.Provider>
     )

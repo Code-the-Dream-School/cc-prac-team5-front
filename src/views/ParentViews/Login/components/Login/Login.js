@@ -2,9 +2,9 @@ import { Box, Container} from '@mui/material'
 import React, { useState, useContext } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
 import axios from 'axios'
-import '../../../styles/Login.css'
-import {landingPath} from '../../../../../../modules/Landing/routes/LandingRoute'
-import {UserContext} from '../../../../../../common/providers/UserContext'
+import '../../styles/Login.css'
+import {landingPath} from '../../../../../modules/Landing/routes/LandingRoute'
+import {UserContext} from '../../../../../common/providers/UserContext'
 
 
 const  Login = () => {
