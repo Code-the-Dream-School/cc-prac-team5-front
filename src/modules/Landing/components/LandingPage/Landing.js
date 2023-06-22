@@ -1,16 +1,18 @@
 import React from 'react'
-import LoginButton from './LoginButton'
-import GetStartedButton from './GetStartedButton'
-import ChildLoginButton from './ChildLoginButton'
-import '../styles/Landing.css'
-import { Typography, Box} from "@mui/material"
-import Footer from './Footer'
-import background from '../../../assets/background.jpg'
-import checklist from '../../../assets/checklist.png'
-import mobile from '../../../assets/mobile.png'
-import kids from '../../../assets/kids.png'
+import LoginButton from '../LoginButton/LoginButton'
+import GetStartedButton from '../GetStartedButton/GetStartedButton'
+import ChildLoginButton from '../ChildLoginButton/ChildLoginButton'
+import '../../styles/Landing.css'
+import { Box} from "@mui/material"
+import Footer from '../Footer/Footer'
+import background from '../../../../assets/background.jpg'
+import checklist from '../../../../assets/checklist.png'
+import mobile from '../../../../assets/mobile.png'
+import kids from '../../../../assets/kids.png'
 
 const Landing = () => {
+
+
   return (
     <div className='bodyContainer'>
       <img src={background} alt='backgr' className='Background' />
@@ -18,7 +20,7 @@ const Landing = () => {
         <LoginButton />
       </Box>
       <div className='IntroContainer'>
-        <Box sx={{ fontSize: 25, fontWeight: 'bold', letterSpacing: 5, color: 'white'}}>
+        <Box sx={{ fontSize: 35, fontWeight: 'bold', letterSpacing: 5, color: 'white'}}>
           Calcifer
         </Box>
         <div className='DescriptionContainer1'>
@@ -41,7 +43,7 @@ const Landing = () => {
           <img src={checklist} alt='checklist' className='Checklist'/>
         </div>
         <Box sx={{display: 'flex', flexDirection:'column', pt: 2 }}>
-          <Typography sx={{fontSize: 14, fontWeight: 'bold'}}>Easily Complete Daily Chores</Typography>
+          <span className='DescriptionTitle'>Easily Complete Daily Chores</span>
           <span className='LandingDescription'>
             {`The simple design makes it easy for children to let their parents know when they 
             have completed their chores!`}
@@ -50,7 +52,7 @@ const Landing = () => {
       </Box>
       <Box sx={{display: 'flex', flexDirection: 'row', pt: 4, pr: 1, pb: 2, margin: 1, textAlign: 'center'}}>
         <Box sx={{display: 'flex', flexDirection:'column' }}>
-          <Typography sx={{fontSize: 14, fontWeight: 'bold'}}> Mobile Friendly </Typography>
+          <span className='DescriptionTitle'> Mobile Friendly </span>
           <span className='LandingDescription'>
             {`Calcifer works on any mobile device with wifi. Parents can connect their own device and share, or have
             your child use their own!`}

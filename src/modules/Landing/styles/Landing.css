@@ -30,7 +30,7 @@
     width: 100%;
   }
   .Subtitle1{
-    font-size: 16px;
+    font-size: 16px; 
     font-weight: 700;
     color: black;
   }
@@ -40,8 +40,13 @@
     color: black;
     padding-top: 6.5em;
   }
+  .DescriptionTitle{
+    font-size: 14.5px;
+    font-weight: 600;
+    color: black;
+  }
   .LandingDescription{
-    font-size: 13.5px;
+    font-size: 14.5px;
     text-align: center;
     margin: 2px;
   }
@@ -72,6 +77,7 @@
     height: 100px;
     margin: 2px;
     padding-top: .5px;
+    padding-left: 10px;
     filter:opacity(80%);
   }
 }
