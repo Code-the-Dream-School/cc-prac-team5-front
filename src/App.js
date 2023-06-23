@@ -1,32 +1,14 @@
-import React, { useState, useEffect } from 'react';
-import { getAllData } from './util/index';
-import Landing from './modules/Landing/components/Landing';
+import React from 'react';
 import { Routes, Route } from "react-router-dom";
 import Login from './views/ParentViews/Login/components/Login';
 import './common/styles/GlobalStyles.css'
-
-const URL = 'http://localhost:8000/api/v1/';
+import Landing from './modules/Landing/components/Landing';
 
 function App() {
 
-const [message, setMessage] = useState(''); 
-
-  useEffect(() => {
-
-    (async () => {
-      const myData = await getAllData(URL)
-      setMessage(myData.data);
-    })();
-      
-    return () => {
-      console.log('unmounting');
-    }
-
-  }, []);
-
   return (
     <>
-      <h1>{message}</h1>
+    <nav>
       <Routes>
         <Route
           path='/'
@@ -37,6 +19,7 @@ const [message, setMessage] = useState('');
             element={<Login />} 
           />
       </Routes>
+      </nav>
     </>
   );
 }

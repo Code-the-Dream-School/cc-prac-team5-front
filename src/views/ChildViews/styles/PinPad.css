@@ -1,0 +1,38 @@
+@media only screen and (max-width: 480px) {
+    .PinPad{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 5%;
+        width: 100%; 
+    }
+    .PinContainer{
+        display: flex;
+        padding-top: 20px;
+    }
+    .PinInput{
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        
+    }
+    .PinButton{
+        background: rgba(109,146,229,255);
+        border-radius: 15%;
+        width: 80px;
+        height: 80px;
+        font-size: 20px;
+    }
+    .PinButtonCancel{
+        background: transparent;
+        border: transparent;
+        font-size: 23px;
+    }
+    .PinButtonBack{
+        background: transparent;
+        border: transparent;
+    }
+}
+
+
