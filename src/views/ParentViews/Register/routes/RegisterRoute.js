@@ -1,7 +1,7 @@
 import React from 'react'
-import { Registration } from '../components/Register'
+import { Register } from '../components/Register'
 
-export const registerPath = '/registration'
+export const registerPath = '/register'
 
 export const registerRoute = {
     path: registerPath,

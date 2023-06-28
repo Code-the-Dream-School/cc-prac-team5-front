@@ -1,8 +1,10 @@
 import React from 'react';
+import Landing from './modules/Landing/components/Landing/Landing';
 import { Routes, Route } from "react-router-dom";
-import Login from './views/ParentViews/Login/components/Login';
+import Login from './views/ParentViews/Login/components/Login/Login';
 import './common/styles/GlobalStyles.css'
-import Landing from './modules/Landing/components/Landing';
+import ChildLogin from './views/ChildViews/components/Login/ChildLogin';
+import Register from './views/ParentViews/Register/components/Register';
 
 function App() {
 
@@ -17,6 +19,14 @@ function App() {
           <Route
             path='/login'
             element={<Login />} 
+          />
+          <Route
+            path='/register'
+            element={<Register/>} 
+          />
+          <Route
+            path='/child-login'
+            element={<ChildLogin />} 
           />
       </Routes>
       </nav>

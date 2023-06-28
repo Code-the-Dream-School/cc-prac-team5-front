@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom';
-import '../styles/GetStartedButton.css'
+import '../../styles/GetStartedButton.css'
 
 const GetStartedButton = () => {
   return (

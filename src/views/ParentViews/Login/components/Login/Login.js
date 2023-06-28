@@ -6,7 +6,6 @@ import '../../styles/Login.css'
 import {landingPath} from '../../../../../modules/Landing/routes/LandingRoute'
 import {UserContext} from '../../../../../common/providers/UserContext'
 
-
 const  Login = () => {
   const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
@@ -23,7 +22,7 @@ const  Login = () => {
 
     try {
         const response = await axios.post(
-            `${process.env.REACT_APP_SERVICE_ENDPOINT}/auth/parents/login`,
+            `${process.env.REACT_APP_SERVICE_ENDPOINT}/parents/login`,
             { email, password }
         )
 
