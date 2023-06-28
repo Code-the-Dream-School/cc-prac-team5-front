@@ -3,12 +3,10 @@ import { useNavigate } from 'react-router-dom'
 import { Container, Box } from '@mui/material'
 import axios from 'axios'
 import '../../styles/ChildLogin.css'
-import {BiCheck} from "react-icons/bi"
 import '../../styles/ChildLogin.css'
 import background from '../../../../assets/background.jpg'
 import { UserContext } from '../../../../common/providers/UserContext'
 import { childDashboardPath } from '../../routes/ChildDashboardPath'
-
 
 const ChildLogin = () => { 
   const [pin, setPin] = useState('')
@@ -25,6 +23,10 @@ const ChildLogin = () => {
   const handleDeleteClick = () => {
     setPin((prevPin) => prevPin.slice(0, -1))
   }
+
+  const handleClearClick = () => {
+    setPin('');
+  };
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -87,7 +89,7 @@ const ChildLogin = () => {
               <div className='lastRow'>
                 <button onClick={handleDeleteClick} className='PinButton'> &lt; </button>
                 <button onClick={() => handlePinClick(0)} className='PinButton'>0</button>
-                <button onClick={handleSubmit} type='submit' className='PinButton'> {<BiCheck />} </button>
+                <button onClick={handleClearClick} type='submit' className='PinButton'> C </button>
               </div>
           </div>
         </div>

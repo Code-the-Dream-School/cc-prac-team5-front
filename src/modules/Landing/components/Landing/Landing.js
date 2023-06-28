@@ -18,7 +18,7 @@ const Landing = () => {
         <LoginButton />
       </Box>
       <div className='IntroContainer'>
-        <Box sx={{  display: 'flex', justifyContent:'center' ,fontSize: 35, fontWeight: 'bold', letterSpacing: 4, color: 'white', pt: 3}}>
+        <Box sx={{  display: 'flex', justifyContent:'center' ,fontSize: 35, fontWeight: 'bold', letterSpacing: 4, color: 'white', pt: 2}}>
           Calcifer
         </Box>
         <Box sx={{display: 'flex', pt: 2, pl:'.5em'}}>
@@ -42,7 +42,7 @@ const Landing = () => {
           <img src={checklist} alt='checklist' className='Checklist'/>
         </div>
         <Box sx={{display: 'flex', flexDirection:'column', justifyContent:'center', pt: 2 }}>
-          <Typography sx={{fontSize: 14, fontWeight: 'bold'}}>Easily Complete Daily Chores</Typography>
+          <Typography sx={{fontSize: 15, fontWeight: 'bold'}}>Easily Complete Daily Chores</Typography>
           <span className='LandingDescription'>
             {`The simple design makes it easy for children to let their parents know when they 
             have completed their chores!`}
@@ -51,7 +51,7 @@ const Landing = () => {
       </Box>
       <Box sx={{display: 'flex', flexDirection: 'row',justifyContent:'center', pt: 4, pr: 1, pb: 2, margin: 1, textAlign: 'center'}}>
         <Box sx={{display: 'flex', flexDirection:'column' }}>
-          <Typography sx={{fontSize: 14, fontWeight: 'bold'}}> Mobile Friendly </Typography>
+          <Typography sx={{fontSize: 15, fontWeight: 'bold'}}> Mobile Friendly </Typography>
           <span className='LandingDescription'>
             {`Calcifer works on any mobile device with wifi. Parents can connect their own device and share, or have
             your child use their own!`}
