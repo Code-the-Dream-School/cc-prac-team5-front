@@ -6,6 +6,7 @@ import './common/styles/GlobalStyles.css'
 import ChildLogin from './views/ChildViews/components/Login/ChildLogin';
 import Register from './views/ParentViews/Register/components/Register';
 
+
 function App() {
 
   return (

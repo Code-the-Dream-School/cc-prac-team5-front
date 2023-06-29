@@ -5,6 +5,14 @@
         border: transparent;
         width: 80px;
         height: 35px;
+        box-shadow: 2px  4px 4px gray;
+    }
+    .loginButton:hover {
+        color: black;
+    }
+    .loginButton:active {
+        box-shadow: 0 4px gray;
+        transform: translateY(4px);
     }
     .loginLink{
         color: white;

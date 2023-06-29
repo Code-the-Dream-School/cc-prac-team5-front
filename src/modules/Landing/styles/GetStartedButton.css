@@ -6,6 +6,11 @@
         width: 120%;
         height: 35px;
         letter-spacing: 1px;
+        box-shadow: 2px  4px 4px gray;
+    }
+    .registerButton:active {
+        box-shadow: 0 4px gray;
+        transform: translateY(4px);
     }
     .registerLink{
         color: white;
