@@ -1,34 +1,17 @@
 import React from 'react';
-// import { getAllData } from './util/index';
-import Landing from './modules/Landing/components/LandingPage/Landing';
+import Landing from './modules/Landing/components/Landing/Landing';
 import { Routes, Route } from "react-router-dom";
 import Login from './views/ParentViews/Login/components/Login/Login';
 import './common/styles/GlobalStyles.css'
-import Register from './views/ParentViews/Register/components/Register';
 import ChildLogin from './views/ChildViews/components/Login/ChildLogin';
+import Register from './views/ParentViews/Register/components/Register';
 
-// const URL = 'http://localhost:8000/api/v1/';
 
 function App() {
 
-// const [message, setMessage] = useState(''); 
-
-//   useEffect(() => {
-
-//     (async () => {
-//       const myData = await getAllData(URL)
-//       setMessage(myData.data);
-//     })();
-      
-//     return () => {
-//       console.log('unmounting');
-//     }
-
-//   }, []);
-
   return (
     <>
-      {/* <h1>{message}</h1> */}
+    <nav>
       <Routes>
         <Route
           path='/'
@@ -38,16 +21,16 @@ function App() {
             path='/login'
             element={<Login />} 
           />
-           <Route
+          <Route
             path='/register'
-            element={<Register />} 
+            element={<Register/>} 
           />
-          <Route 
-          path='/child-login'
-          element={<ChildLogin />}
+          <Route
+            path='/child-login'
+            element={<ChildLogin />} 
           />
       </Routes>
-      
+      </nav>
     </>
   );
 }

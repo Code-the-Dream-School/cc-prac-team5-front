@@ -1,13 +1,12 @@
-import React, { useContext, useState } from 'react'
-import { Container } from '@mui/material';
+import React, { useState, useContext } from 'react'
 import '../styles/Register.css'
-import { IoIosArrowBack } from "react-icons/io";
-import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import { UserContext } from '../../../../common/providers/UserContext';
-import { loginPath } from '../../../ParentViews/Login/routes/LoginRoute'
+import { useNavigate } from 'react-router-dom'
+import { UserContext } from '../../../../common/providers/UserContext'
+import axios from 'axios'
+import { Container } from '@mui/material'
+import { loginPath } from '../../Login/routes/LoginRoute'
 
-export const Register = () => {
+const Register = () => {
     const navigate = useNavigate()
     const [isLoading, setIsLoading] = useState(false)
     const { setUser } = useContext(UserContext)
@@ -22,7 +21,7 @@ export const Register = () => {
       try{
         const response = await axios.post(
           //TODO Check for auth endpoints
-          `${process.env.REACT_APP_SERVICE_ENDPOINT}/auth/register`,
+          `${process.env.REACT_APP_SERVICE_ENDPOINT}/parents/register`,
           {...data },
           {headers: {  'Content-Type': 'application/json' }}  
         )
@@ -47,11 +46,11 @@ export const Register = () => {
         <div className='Register'>
           <div className='RegisterTitle'>
             <div className='backButtonContainer'>
-              <button className='backButton'>
+              {/* <button className='backButton'>
                 <Link to='/' className='backLink'>
                   {<IoIosArrowBack size={'25px'}/>}
                 </Link>
-              </button>
+              </button> */}
           </div>
             <span className='CreateAccount'>Create Account</span>
           </div>
@@ -59,39 +58,39 @@ export const Register = () => {
             <form onSubmit={handleSubmit}>
             <div className='Input1'>
               <input
-                className='RegisterInput'
-                type="text"
-                name="name"
-                placeholder="your name"
-                required
+              className='RegisterInput'
+              type="text"
+              name="name"
+              placeholder="your name"
+              required
               />
               <input
-                className='RegisterInput'
-                type="text"
-                name="email"
-                placeholder="email"
-                required
+              className='RegisterInput'
+              type="text"
+              name="email"
+              placeholder="email"
+              required
               />
               <input
-                className='RegisterInput'
-                type="password"
-                name="password"
-                placeholder="password"
-                required
+              className='RegisterInput'
+              type="password"
+              name="password"
+              placeholder="password"
+              required
               />
-                  <div className='ButtonContainer'>
-                    <button 
-                    className='RegisterButton'
-                    disabled={isLoading}
-                    type='submit'
-                    >
-                        Register
-                    </button>
+              <div className='ButtonContainer'>
+                <button 
+                className='RegisterButton'
+                disabled={isLoading}
+                type='submit'
+                >
+                  Register
+                </button>
 
                     {/* //TODO: add error message if reg fails */}
 
-                    </div>
-                  </div>      
+              </div>
+              </div>      
             </form>
           </div>
         </div>
@@ -99,7 +98,6 @@ export const Register = () => {
     
     )
   }
-
 
 
 

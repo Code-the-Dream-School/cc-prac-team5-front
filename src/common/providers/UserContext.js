@@ -1,21 +1,21 @@
 import React, { createContext, useEffect, useState } from 'react'
 import axios from 'axios'
 
-
-//TODO: finish user context
 export const UserContext = createContext({})
 
-export const UserProvider = ({children}) => {
+export const UserProvider = ({ children }) => {
     const [user, setUserState] = useState({
         name: '',
         email: '',
-        token: ''
-
+        token: '',
+        pin: ''
     })
-    const setUser = ({ name, email, token }) => {
+
+    const setUser = ({ name, email, token, pin }) => {
         token && localStorage.setItem('userToken', token)
-        setUserState({ name, email, token })
+        setUserState({ name, email, token, pin })
     }
+
     useEffect(() => {
         async function validateToken() {
             if (localStorage.getItem('userToken')) {
@@ -40,7 +40,6 @@ export const UserProvider = ({children}) => {
                     }
                 } catch (error) {
                     if (error.response.status === 401) {
-                        // logout()
                     }
                 }
             }
@@ -50,7 +49,7 @@ export const UserProvider = ({children}) => {
 
     // const logout = () => {
     //     setUser({
-    //         name: '',
+    //         username: '',
     //         email: '',
     //         token: ''
     //     })
@@ -58,10 +57,8 @@ export const UserProvider = ({children}) => {
     // }
 
     return (
-        <UserContext.Provider value={{ user, setUser }}>
+        <UserContext.Provider value={{ user, setUser}}>
             {children}
         </UserContext.Provider>
     )
 }
-
-
