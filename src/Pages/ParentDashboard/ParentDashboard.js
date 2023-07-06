@@ -2,7 +2,7 @@ import React from 'react';
 import setting from '../../assets/Images/setting.png';
 import trash from '../../assets/Images/trash.png';
 import { useNavigate } from 'react-router-dom';
-import BottomMenu from '../../modules/Landing/components/BottomMenu/BottomMenu';
+import BottomMenu from '../../Components/BottomMenu'
 
 const ParentDashboard = () => {
     const navigate = useNavigate();
