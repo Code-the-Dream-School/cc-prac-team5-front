@@ -40,15 +40,15 @@ const ChildDashboard = () => {
       <Container>
         <div>
           <div>
-            <Box sx={{display:'flex', justifyContent:'center', pt: 5, fontSize:25, fontWeight: 700}}>Hi, User1</Box>
+            <Box sx={{display:'flex', justifyContent:'center', pt: 5, pb:'30%', fontSize:25, fontWeight: 700}}>Hi, User1</Box>
           </div>
           <Box sx={{display: 'flex', justifyContent:'center', flexDirection:'column', pt: 5}}>
-            <h2 className='userTitle'>User1's Chores</h2>
             <table className='taskTable'>
+            <Box sx={{fontSize:22,textAlign:'center', alignSelf:'center'}}>User1's Chores</Box>
               <tbody className='taskList'>
                 {taskList.map((task, index) => (
                   <tr key={index}>
-                    <td>{task.title}</td>
+                    <td className='taskTitle'>{task.title}</td>
                     <td>
                       <select
                         value={task.status}

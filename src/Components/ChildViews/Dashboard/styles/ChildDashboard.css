@@ -1,16 +1,28 @@
-.userTitle{
-    font-size: 20px;
-    text-align: center;
-    padding-bottom: 5px;
-}
 .taskTable{
-   text-align: center;
-   background-color:#B3C8E5;
-   opacity: 80%;
-   border-radius: 15px;
+    align-self: center;
+    align-items: center;
+    background-color:#B3C8E5;
+    opacity: 80%;
+    width: 95%;
+    border-radius: 15px;
+    font-size: 15px;
+    
+}
+/* .taskList{
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+   
+} */
+select{
+    font-size: 14px;
+    text-align: center;
+    border-radius: 5;
+    width: 79px;
+    
 }
 .taskTitle{
-    font-size: 20px;
+    font-size: 18px;
 }
 
 
