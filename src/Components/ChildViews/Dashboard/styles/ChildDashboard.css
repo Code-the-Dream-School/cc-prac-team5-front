@@ -3,10 +3,15 @@
     align-items: center;
     background-color:#B3C8E5;
     opacity: 80%;
-    width: 95%;
+    width: 100%;
     border-radius: 15px;
     font-size: 15px;
-    
+    padding: 40px;   
+}
+.UserImage{
+    align-self: center;
+    padding-top: 10px;
+    border-radius: 50%;
 }
 /* .taskList{
     display: flex;
