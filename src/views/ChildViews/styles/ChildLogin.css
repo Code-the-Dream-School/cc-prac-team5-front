@@ -1,0 +1,50 @@
+.ChildLogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25%;
+    width: 100%; 
+}
+.CLTitleContainer{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+}
+.CLTitle{
+    font-size: 40px;
+    text-align: center;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.PinPad{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+    width: 100%; 
+}
+.PinContainer{
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+.PinInput{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;        
+}
+.PinButton{
+    background: rgba(109,146,229,255);
+    border-radius: 15%;
+    width: 100px;
+    height: 100px;
+    font-size: 25px;
+}
+.lastRow{
+    display: flex;
+    justify-content: center;
+}

@@ -1,0 +1,41 @@
+    .loginButton{
+        display: block;
+        background: rgba(109,146,229,255);
+        border-radius: 15px;
+        border: transparent;
+        width: 80px;
+        height: 35px;
+        box-shadow: 2px  4px 4px gray;
+    }
+    .loginButton:hover {
+        color: black;
+    }
+    .loginButton:active {
+        box-shadow: 0 4px gray;
+        transform: translateY(4px);
+    }
+    .loginLink{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold; 
+        letter-spacing: 1px;
+    }
+
+/* @media only screen and (max-width: 768px) {
+    .loginButton{
+        display: block;
+        background: rgba(109,146,229,255);
+        border-radius: 15px;
+        border: transparent;
+        width: 80px;
+        height: 35px;
+    }
+    .loginLink{
+        color: white;
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: bold; 
+        letter-spacing: 1px;
+    }
+} */

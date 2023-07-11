@@ -1,0 +1,85 @@
+.Register{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 18%; 
+}
+.RegisterTitle{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 38px;
+    margin: 20px 0px;
+    padding-bottom: 4%;
+    align-items: center;
+    justify-content: center;
+}
+.RegisterInput{
+    height: 40px !important;
+    border: 1px solid #ccc;
+    outline: none;
+    margin: 10px 0px;
+    width: 343px;
+    border-radius: 8px;
+    font-size: 18px;
+}
+/* .backButton{
+    background-color: #EEECEC;
+    border-radius: 50%;
+    border: transparent;
+    box-shadow: 4px  4px 4px gray;
+    height: 43px;
+    width: 43px;
+}
+.backButton:active{
+    box-shadow: 0 4px gray;
+    transform: translateY(2px);
+}
+.backLink{
+    text-decoration: none;
+    color: black;
+} */
+.CreateAccount{
+    font-weight: bold;
+    font-size: 30px;
+    letter-spacing: 2;
+    text-align: center;
+}
+.RegisterFormBox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+.Input1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.RegisterFormBox input,
+textarea {
+    width: 343px;
+    height: 35px;
+    padding: .8rem 0.8rem .8rem 0.8rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 18px;
+
+}
+.ButtonContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.RegisterButton{
+    width: 343px;
+    border-radius: 5px;
+    font-size: 20px;
+    height: 45px;
+    background-color: rgba(109,146,229,255) !important;
+    border: transparent;
+    color: white;
+    font-weight:500;
+}
+
