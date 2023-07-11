@@ -1,0 +1,48 @@
+.Login{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    padding-top: 35%; 
+}
+.FormBox{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 60vh;
+}
+.FormBox input,
+textarea{
+    padding: .8rem 0.8rem .8rem 0.8rem;
+    margin: 2vw 0;
+    width: 343px;
+    border-radius: 5px;
+    font-size: 18px;
+}
+.ButtonContainer{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+.LoginButton{
+    width: 100%;
+    border-radius: 8px;
+    font-size: 20px;
+    height: 50px;
+    background-color: rgba(109,146,229,255);
+    border: transparent;
+    color: white;
+    font-weight:500;
+}
+.SubtitleLinks{
+    color: #666666;
+    font-size: 16px;
+    letter-spacing: .5px;
+}
+.SignUp{
+    font-size: 16.5px;
+    letter-spacing: .5px;
+    font-weight: bold;
+    color: rgba(109,146,229,255);
+    text-decoration: none;
+}

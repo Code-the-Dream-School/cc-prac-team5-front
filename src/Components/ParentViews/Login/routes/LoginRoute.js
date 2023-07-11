@@ -1,7 +1,7 @@
 import React from 'react'
-import Login from '../components/Login/Login'
+import Login from '../components/Login'
 
-export const loginPath = '/login'
+export const loginPath = '/'
 
 export const loginRoute = {
     path: loginPath,
