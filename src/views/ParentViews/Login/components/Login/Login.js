@@ -1,46 +1,61 @@
-import { Box, Container} from '@mui/material'
-import React, { useState, useContext } from 'react'
+import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
-import axios from 'axios'
+import { Box, Container} from '@mui/material'
+import { toast } from 'react-toastify';
 import '../../styles/Login.css'
-import {landingPath} from '../../../../../modules/Landing/routes/LandingRoute'
-import {UserContext} from '../../../../../common/providers/UserContext'
+import { AuthAPI } from '../../../../../common/API'
 
 const  Login = () => {
-  const [isLoading, setIsLoading] = useState(false)
   const navigate = useNavigate()
-  const { setUser } = useContext(UserContext)
-  const [error, setError] = useState(null)
+  const [isLoading, setIsLoading] = useState(false)
+  const [validEmail, setValidEmail] = useState('')
+  const [validPwd, setValidPwd] = useState('')
+
+  const hanldeValidate = (email, password) => {
+    let valid = false
+    if (email === "") {
+      setValidEmail('Please Enter Email')
+        valid = true;
+    }
+    if (password === '') {
+        setValidPwd('Please Enter Password')
+        valid = true;
+    }
+    return valid;
+  }
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-    setIsLoading(true)
-
-    const data = new FormData(e.currentTarget)
-    const email = data.get('email')
-    const password = data.get('password')
-
-    try {
-        const response = await axios.post(
-            `${process.env.REACT_APP_SERVICE_ENDPOINT}/parents/login`,
-            { email, password }
-        )
-
-        if (response.data.user) {
-            const user = {
-                name: response.data.user.name,
-                email: response.data.user.email,
-                token: response.data.user.token
-            }
-            setUser(user)
-            navigate(landingPath)
-        }
-    } catch (err) {
-        setError('Login unsuccessful')
-    } finally {
-        setIsLoading(false)
+    const Authdata = new FormData(e.currentTarget)
+    const email = Authdata.get('email')
+    const password = Authdata.get('password')
+    if(hanldeValidate(email, password)){
+      return
     }
-}
+    try{
+      setIsLoading(true)
+
+      const data = {
+        method:'POST',
+        data: {
+          email: email, 
+          password:password
+        }
+      }
+      const response = await AuthAPI('/parents/login', data)
+      if (response.status === 'success') {
+          localStorage.setItem('token', response.token)
+          navigate('/parentdashboard')
+          toast.success('Login successfully')
+      } else {
+        toast.error('Incorrect email or password')
+        setIsLoading(false)
+      }
+    }catch(error){
+      toast.error('Login unsuccessfull')
+      setIsLoading(false)
+    }
+  }
   
   return (
     <Container>
@@ -53,25 +68,29 @@ const  Login = () => {
         </Box>
         <div className='FormBox'>
           <form onSubmit={handleSubmit}>
-            <div className='Input1'>
+            <div className='login-Input'>
                 <input
-                    className='LoginInput'
+                    className='Login-Input'
                     type="text"
                     name="email"
                     placeholder="email"
-                    required
+                    onChange={(e) => {
+                      setValidEmail(e.target.value === "" ? 'Please Enter Email' : '');
+                    }}
                 />
+                <p className='text-start text-[red]'>{validEmail}</p>
                 <input
-                    className='LoginInput'
+                    className='Login-Input'
                     type="password"
                     name="password"
                     placeholder="password"
-                    required
+                    onChange={(e) => {
+                      setValidPwd(e.target.value === "" ? 'Please Enter Password' : '');
+                    }}
                 />
-                {error && <span>{error}</span>}
-
+                <p className='text-start text-[red]'>{validPwd}</p>
                 <div className='ButtonContainer'>
-                  <button className='LoginButton' disabled={isLoading}>
+                  <button className='LoginButton my-3' disabled={isLoading}>
                     <span>{isLoading ? 'Loading...' : 'Login'}</span>
                   </button>
                   </div>
@@ -83,7 +102,7 @@ const  Login = () => {
           </form>
         </div>
       <Box>
-        <span className='SubtitleLinks'>
+        <span className='SubtitleLinks mt-4 flex justify-center'>
           {`Don't have an account?`} 
           <Link to="/register" className='SignUp'>
             Sign up

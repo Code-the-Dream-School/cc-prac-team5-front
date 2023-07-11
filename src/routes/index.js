@@ -26,14 +26,14 @@ function Routers() {
         <Route path='/register' element={<Register />} />
         <Route path='/child-login' element={<ChildLogin />} />
         <Route path="/parentdashboard" element={ user ? <ParentDashboard /> : <Navigate to='/login' />} />
-        <Route path="/chore" element={<Chore />} />
-        <Route path="/editchore" element={<EditChore />} />
-        <Route path="/user1" element={<User1 />} />
+        <Route path="/chore" element={user ? <Chore /> : <Navigate to='/login' />} />
+        <Route path="/editchore/:id" element={user ? <EditChore /> : <Navigate to='/login' />} />
+        <Route path="/user1" element={user ? <User1 /> : <Navigate to='/login' />} />
         <Route path="/rewards" element={<Rewards />} />
-        <Route path="/rewards2" element={<Rewards2 />} />
-        <Route path="/editchild/:id" element={<EditChild />} />
-        <Route path="/newchore" element={<NewChore />} />
-        <Route path="/addnewrewards" element={<NewReward />} />
+        <Route path="/rewards2" element={user ? <Rewards2 /> : <Navigate to='/login' />} />
+        <Route path="/editchild/:id" element={ user ? <EditChild /> : <Navigate to='/login' />} />
+        <Route path="/newchore" element={ user ? <NewChore /> : <Navigate to='/login' />} />
+        <Route path="/addnewrewards" element={ user ? <NewReward /> : <Navigate to='/login' />} />
         <Route path="/earnrewards" element={<EarnReward />} />
     </Routes>
   )

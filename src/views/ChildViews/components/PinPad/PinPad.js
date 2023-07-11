@@ -11,9 +11,9 @@ const PinPad = () => {
         <form>
         <div>
             <PinInput 
-            length={4}
-            inputMode='numeric'
-            secret
+              length={4}
+              inputMode='numeric'
+              secret
             />
         </div>
       </form>
