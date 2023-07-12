@@ -1,16 +1,9 @@
 import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
-<<<<<<< HEAD:src/views/ParentViews/Login/components/Login/Login.js
 import { Box, Container} from '@mui/material'
 import { toast } from 'react-toastify';
-import '../../styles/Login.css'
-import { AuthAPI } from '../../../../../common/API'
-=======
-import axios from 'axios'
 import '../styles/Login.css'
-import {landingPath} from '../../../Landing/routes/LandingRoute'
-import {UserContext} from '../../../../common/providers/UserContext'
->>>>>>> 821081e03e339efbb2e749aa00a8be96d91a6503:src/Components/ParentViews/Login/components/Login.js
+import { AuthAPI } from '../../../../common/API'
 
 const  Login = () => {
   const navigate = useNavigate()
@@ -33,39 +26,11 @@ const  Login = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault()
-<<<<<<< HEAD:src/views/ParentViews/Login/components/Login/Login.js
     const Authdata = new FormData(e.currentTarget)
     const email = Authdata.get('email')
     const password = Authdata.get('password')
     if(hanldeValidate(email, password)){
       return
-=======
-    setIsLoading(true)
-
-    const data = new FormData(e.currentTarget)
-    const email = data.get('email')
-    const password = data.get('password')
-
-    try {
-        const response = await axios.post(
-            `${process.env.REACT_APP_SERVICE_ENDPOINT}/parents/login`,
-            { email, password }
-        )
-
-        if (response.data.user) {
-            const user = {
-                name: response.data.user.name,
-                email: response.data.user.email,
-                token: response.data.user.token
-            }
-            setUser(user)
-            navigate(landingPath)
-        }
-    } catch (err) {
-        setError('Login unsuccessful')
-    } finally {
-        setIsLoading(false)
->>>>>>> 821081e03e339efbb2e749aa00a8be96d91a6503:src/Components/ParentViews/Login/components/Login.js
     }
     try{
       setIsLoading(true)
@@ -95,10 +60,10 @@ const  Login = () => {
   return (
     <Container>
       <div className='Login'>
-        <Box sx={{fontWeight: 'bold',  fontSize: 25, letterSpacing: 2}}>
+        <Box sx={{fontWeight: 'bold',  fontSize: 25, letterSpacing: 2, display: 'flex', justifyContent: 'center'}}>
           Welcome Back
         </Box>
-        <Box sx={{fontSize: 18, pb: 2,  letterSpacing: 1}}>
+        <Box sx={{fontSize: 18, pb: 2,  letterSpacing: 2, display: 'flex', justifyContent: 'center'}}>
           Please login to continue.
         </Box>
         <div className='FormBox'>

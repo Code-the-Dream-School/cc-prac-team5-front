@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 25%;
+    padding-top: 8%;
     width: 100%; 
 }
 .CLTitleContainer{
@@ -23,28 +23,53 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding-top: 10%;
-    width: 100%; 
+    padding-top: 20px;
+    width: 100%;
+     
 }
 .PinContainer{
     display: flex;
     justify-content: center;
-    padding-top: 20px;
+    padding-top: 5px;
 }
 .PinInput{
     display: flex;
     flex-direction: column;
     justify-content:center;
-    align-items: center;        
+    align-items: center;    
+        
 }
 .PinButton{
-    background: rgba(109,146,229,255);
+    background: rgba(109,146,229,255) !important;
     border-radius: 15%;
-    width: 100px;
-    height: 100px;
+    box-shadow: 5px 5px 0px rgba(0, 0, 0, 0.5);
+    width: 85px;
+    height: 85px;
     font-size: 25px;
+    border: 1px solid black;
+    margin: .5vw .5vw;
 }
 .lastRow{
     display: flex;
     justify-content: center;
+}
+
+@media only screen and (max-width: 768px) {
+    .ChildLogin{
+        padding-top: 20%;
+    }
+    .CLTitle{
+        font-size: 35px;
+        padding-bottom: 40px;
+    }
+    .PinButton{
+        background: rgba(109,146,229,255) !important;
+        border-radius: 15%;
+        box-shadow: 2px 2px 0px rgba(0, 0, 0, 0.5);
+        width: 80px;
+        height: 80px;
+        font-size: 25px;
+        border: 1px solid black;
+        margin: 1vw 1vw;
+    }
 }

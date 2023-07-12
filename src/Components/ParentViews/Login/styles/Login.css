@@ -3,7 +3,7 @@
     flex-direction: column;
     justify-content: center;
     width: 100%;
-    padding-top: 35%; 
+    padding-top: 8%; 
 }
 .FormBox{
     display: flex;
@@ -18,6 +18,7 @@ textarea{
     width: 343px;
     border-radius: 5px;
     font-size: 18px;
+    border: 1px solid #1A4F8B;
 }
 .ButtonContainer{
     display: flex;
@@ -45,4 +46,18 @@ textarea{
     font-weight: bold;
     color: rgba(109,146,229,255);
     text-decoration: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .Login{
+        padding-top: 20%; 
+    }   
+    .FormBox input,
+textarea{
+    padding: .8rem 0.8rem .8rem 0.8rem;
+    margin: 2vw 0;
+    width: 300px;
+    border-radius: 5px;
+    font-size: 18px;
+} 
 }

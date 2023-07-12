@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { useEffect, useState } from "react";
 import setting from "../../assets/Images/setting.png";
 import trash from "../../assets/Images/trash.png";
@@ -6,13 +5,6 @@ import { useNavigate } from "react-router-dom";
 import BottomMenu from "../../Components/BottomMenu/BottomMenu";
 import { AuthAPI } from "../../common/API";
 import { toast } from "react-toastify";
-=======
-import React from 'react';
-import setting from '../../assets/Images/setting.png';
-import trash from '../../assets/Images/trash.png';
-import { useNavigate } from 'react-router-dom';
-import BottomMenu from '../../Components/BottomMenu'
->>>>>>> 821081e03e339efbb2e749aa00a8be96d91a6503
 
 const ParentDashboard = () => {
   const navigate = useNavigate();
