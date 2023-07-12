@@ -1,9 +1,9 @@
 import React from 'react'
 import { Route, Routes, Navigate } from 'react-router-dom'
-import Landing from '../modules/Landing/components/Landing/Landing'
-import ChildLogin from '../views/ChildViews/components/Login/ChildLogin'
-import Login from '../views/ParentViews/Login/components/Login/Login'
-import Register from '../views/ParentViews/Register/components/Register'
+import Landing from '../Components/Landing/components/Landing'
+import ChildLogin from '../Components/ChildViews/Login/components/ChildLogin'
+import Login from '../Components/ParentViews/Login/components/Login'
+import Register from '../Components/ParentViews/Register/components/Register'
 import Rewards from '../Pages/Rewards/Rewards';
 import User1 from '../Pages/User1/User1';
 import ParentDashboard from '../Pages/ParentDashboard/ParentDashboard';
